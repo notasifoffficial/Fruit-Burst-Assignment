@@ -7,13 +7,79 @@
     <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind colors -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#F85559',
+              descriptionC: '#12121299',
+          }
+        }
+      }
+    </script>
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>hello</h1>
-    </header>
-    <main>
+<body class="font-lato">
+    <header class="container mx-auto">
+    <div class="navbar bg-base-100 mt-12 rounded-full lg:bg-red-500 p-4">
+            <div class="nav">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                  <li>
+                    <a>Home</a>
+                  </li>
+                  <li>
+                    <a>About Us</a>
+                  </li>
+                  <li>
+                    <a>Shop</a>
+                  </li>
+                  <li>
+                    <a>All Fruits</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="hidden lg:navbar-center lg:flex">
+              <ul class="menu menu-horizontal lg:px-1 lg:text-xl text-white">
+                <li>
+                  <a>Home</a>
+                </li>
+                <li tabindex="0">
+                    <summary>About Us</summary>
+                </li>
+                <li>
+                  <a>Shop</a>
+                </li>
+                <li>
+                  <a>All Fruits</a>
+                </li>
+              </ul>
+            </div>
+            <div class="lg:flex ml-auto lg:m-auto gap-2">
+              <img class="w-10 " src="/images/logo.png" />
+              <h2 class="font-bold text-xl text-white">Fruit Burst</h2>
+            </div>
+            <div class="hidden lg:block lg:relative ml-auto">
+              <input class="rounded-full px-8 pr-14 h-14 w-72 bg-white" type="text" placeholder="Search Here">
+              <i class="fa-solid fa-magnifying-glass absolute top-5 right-5"></i>
+            </div>
+    .
 
     </main>
     <footer>
