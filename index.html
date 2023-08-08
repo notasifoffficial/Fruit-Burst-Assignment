@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind colors -->
     <script>
-      tailwind.config = {
+    tailwind.config = {
         theme: {
           extend: {
             colors: {
@@ -24,6 +24,7 @@
           }
         }
       }
+    }
     </script>
     <style>
       .font-lato{
@@ -79,7 +80,118 @@
               <input class="rounded-full px-8 pr-14 h-14 w-72 bg-white" type="text" placeholder="Search Here">
               <i class="fa-solid fa-magnifying-glass absolute top-5 right-5"></i>
             </div>
-    .
+    </div>
+      <!-- BANNER SECTION -->
+      <div class="carousel w-full mt-14">
+        <!-- Slide 1 -->
+        <div id="slide1" class=" hero carousel-item relative w-full">
+          <!-- Slide Content 1 -->
+          <div class="text-center absolute transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="flex items-center flex-col">
+              <h1 class="mb-2 md:mb-5 md:text-7xl font-extrabold text-white text-2xl mt-10 md:mt-0">Exotic tastes at your <br> doorstep</h1>
+              <p class="md:mb-5 text-white font-medium text-sm md:text-lg">We supply highly quality organic products</p>
+              <button class="hover:bg-red-700 bg-primary border-none rounded-2xl py-3 md:py-6 px-4 md:px-6 text-white text-lg md:text-xl text- font-extrabold mb-14 md:mb-0 mt-4">Shop Now</button>
+            </div>
+          </div>
+          <img src="/images/banner1.png" class="h-56 md:h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <!-- Slide Content 2 -->
+          <div class="text-center absolute transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="flex items-center flex-col">
+              <h1 class="mb-2 md:mb-5 md:text-7xl font-extrabold text-white text-2xl mt-10 md:mt-0">Exotic tastes at your <br> doorstep</h1>
+              <p class="md:mb-5 text-white font-medium text-sm md:text-lg">We supply highly quality organic products</p>
+              <button class="hover:bg-red-700 bg-primary border-none rounded-2xl py-3 md:py-6 px-4 md:px-6 text-white text-lg md:text-xl text- font-extrabold mb-14 md:mb-0 mt-4">Shop Now</button>
+            </div>
+          </div>
+          <img src="/images/banner2.png" class="h-56 md:h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <!-- Slide Content 3 -->
+          <div class="text-center absolute transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="flex items-center flex-col">
+              <h1 class="mb-2 md:mb-5 md:text-7xl font-extrabold text-white text-2xl mt-10 md:mt-0">Exotic tastes at your <br> doorstep</h1>
+              <p class="md:mb-5 text-white font-medium text-sm md:text-lg">We supply highly quality organic products</p>
+              <button class="hover:bg-red-700 bg-primary border-none rounded-2xl py-3 md:py-6 px-4 md:px-6 text-white text-lg md:text-xl text- font-extrabold mb-14 md:mb-0 mt-4">Shop Now</button>
+            </div>
+          </div>
+          <img src="/images/banner3.png" class="h-56 md:h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- Slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <!-- Slide Content 4 -->
+          <div class="text-center absolute transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="flex items-center flex-col">
+              <h1 class="mb-2 md:mb-5 md:text-7xl font-extrabold text-white text-2xl mt-10 md:mt-0">Exotic tastes at your <br> doorstep</h1>
+              <p class="md:mb-5 text-white font-medium text-sm md:text-lg">We supply highly quality organic products</p>
+              <button class="hover:bg-red-700 bg-primary border-none rounded-2xl py-3 md:py-6 px-4 md:px-6 text-white text-lg md:text-xl text- font-extrabold mb-14 md:mb-0 mt-4">Shop Now</button>
+            </div>
+          </div>
+          <img src="/images/banner4.png" class="h-56 md:h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- Deal of the day section -->
+      <section class="flex flex-col md:flex-row md:justify-between mt-10 mb-14">
+        <div>
+          <h3 class="text-[#121212] text-5xl font-bold mb-6">Deal Of The Day</h3>
+          <p class="text-descriptionC">
+            Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-[#121212] text-5xl font-bold">
+              29
+            </span>
+            Days
+          </div> 
+          <i class="fa-solid fa-ellipsis-vertical text-2xl pt-2"></i>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-[#121212] text-5xl font-bold">
+              15
+            </span>
+            Hours
+          </div> 
+          <i class="fa-solid fa-ellipsis-vertical text-2xl pt-2"></i>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl text-[#121212] font-bold">
+              25
+            </span>
+            Minutes
+          </div> 
+          <i class="fa-solid fa-ellipsis-vertical text-2xl pt-2"></i>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl text-[#121212] font-bold">
+              08
+            </span>
+            Seconds
+          </div>
+        </div>
+      </section>
+    
+      
+      
+
 
     </main>
     <footer>
