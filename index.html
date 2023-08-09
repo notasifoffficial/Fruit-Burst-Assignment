@@ -40,7 +40,7 @@
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
                   <li>
                     <a>Home</a>
                   </li>
@@ -74,7 +74,7 @@
             </div>
             <div class="lg:flex ml-auto lg:m-auto gap-2">
               <img class="w-10 " src="/images/logo.png" />
-              <h2 class="font-bold text-xl text-white">Fruit Burst</h2>
+              <h2 class="font-bold text-xl text-black md:text-white">Fruit Burst</h2>
             </div>
             <div class="hidden lg:block lg:relative ml-auto">
               <input class="rounded-full px-8 pr-14 h-14 w-72 bg-white" type="text" placeholder="Search Here">
@@ -189,7 +189,7 @@
         </div>
       </section>
       <!-- card section -->
-      <div class="flex flex-col md:flex-row gap-10 h-96">
+      <div class="flex flex-col ml-5 md:flex-row gap-10 h-96">
         <!-- First Card -->
         <div class="card w-96 bg-base-100 shadow-2xl bg-white">
           <figure class="px-10 pt-10">
@@ -282,6 +282,50 @@
           <form method="dialog" class="modal-box">
             <div class="flex flex-col items-center">
               <img class="w-36" src="images/fruit6.png" alt="">
+              <h3 class="font-bold text-lg mt-5">Apples</h3>
+              <p class="p-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <div>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+              </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-8">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn bg-transparent text-[#F85559] border border-[#F85559] font-extrabold">Close</button>
+              <button class="rounded-xl hover:bg-pink-500 text-white bg-[#F85559] px-8 py-1 font-extrabold border">Buy Now</button>
+            </div>
+          </form>
+        </dialog>
+        <!-- modal of Second Card -->
+        <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+          <form method="dialog" class="modal-box">
+            <div class="flex flex-col items-center">
+              <img class="w-36" src="images/fruit7.png" alt="">
+              <h3 class="font-bold text-lg mt-5">Orange</h3>
+              <p class="p-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <div>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+              </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-8">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn bg-transparent text-[#F85559] border border-[#F85559] font-extrabold">Close</button>
+              <button class="rounded-xl hover:bg-pink-500 text-white bg-[#F85559] px-8 py-1 font-extrabold border">Buy Now</button>
+            </div>
+          </form>
+        </dialog>
+        <!-- modal of Third Card -->
+        <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+          <form method="dialog" class="modal-box">
+            <div class="flex flex-col items-center">
+              <img class="w-36" src="images/fruit8.png" alt="">
               <h3 class="font-bold text-lg mt-5">Red Dragon</h3>
               <p class="p-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
               <div>
@@ -295,48 +339,38 @@
             <div class="mt-12 flex justify-center gap-8">
               <!-- if there is a button in form, it will close the modal -->
               <button class="btn bg-transparent text-[#F85559] border border-[#F85559] font-extrabold">Close</button>
-              <button class="btn text-white bg-[#F85559] py-6 px-8 font-extrabold border"><span class="mb-12">Buy Now</span></button>
-            </div>
-          </form>
-        </dialog>
-        <!-- modal of Second Card -->
-        <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
-          <form method="dialog" class="modal-box">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
-            <div class="modal-action">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
-            </div>
-          </form>
-        </dialog>
-        <!-- modal of Third Card -->
-        <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
-          <form method="dialog" class="modal-box">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
-            <div class="modal-action">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="rounded-xl hover:bg-pink-500 text-white bg-[#F85559] px-8 py-1 font-extrabold border">Buy Now</button>
             </div>
           </form>
         </dialog>
         <!-- modal of Fourth Card -->
         <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
           <form method="dialog" class="modal-box">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
-            <div class="modal-action">
+            <div class="flex flex-col items-center">
+              <img class="w-36" src="images/fruit9.png" alt="">
+              <h3 class="font-bold text-lg mt-5">Banana</h3>
+              <p class="p-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <div>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+                <i class="fa-solid fa-star text-primary opacity-50"></i>
+              </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-8">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="btn bg-transparent text-[#F85559] border border-[#F85559] font-extrabold">Close</button>
+              <button class="rounded-xl hover:bg-pink-500 text-white bg-[#F85559] px-8 py-1 font-extrabold border">Buy Now</button>
             </div>
           </form>
         </dialog>
       </div>
+      <div class="md:flex justify-center hidden md:mt-32 ">
+        <button class="rounded-xl hover:bg-pink-900 text-white bg-[#F85559] px-10 py-6 font-extrabold border border-none md:my-40">Shop All</button>
+      </div>
+      <!-- Meet Team Section -->
       
-      
-
-
     </main>
     <footer>
 
